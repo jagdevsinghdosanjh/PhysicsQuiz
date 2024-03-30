@@ -36,7 +36,7 @@ const questions = [
     },
 
     {
-        question: "How manay hours can be found in a year ?",
+        question: "How many hours can be found in a year ?",
         optionA: "8756 hours",
         optionB: "8758 hours",
         optionC: "8768 hours",
