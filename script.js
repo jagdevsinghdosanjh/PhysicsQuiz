@@ -1,10 +1,10 @@
 const questions = [
     {
         question: "How many planets our Solar System have?",
-        optionA: "8",
-        optionB: "9",
-        optionC: "7",
-        optionD: "10",
+        optionA: "8 Planets",
+        optionB: "9 Planets",
+        optionC: "7 Planets",
+        optionD: "10 Planets",
         correctOption: "optionA"
     },
 
@@ -249,7 +249,7 @@ let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
     //function to shuffle and push 20 questions to shuffledQuestions array
-    while (shuffledQuestions.length <= 19) {
+    while (shuffledQuestions.length <= 20) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random)
@@ -317,7 +317,7 @@ function checkForAnswer() {
             //set to delay question number till when next question loads
             setTimeout(() => {
                 questionNumber++
-            }, 500)
+            }, 1000)
         }
     })
 }
@@ -330,7 +330,7 @@ function handleNextQuestion() {
     unCheckRadioButtons()
     //delays next question displaying for a second
     setTimeout(() => {
-        if (indexNumber <= 19) {
+        if (indexNumber <= 20) {
             NextQuestion(indexNumber)
         }
         else {
