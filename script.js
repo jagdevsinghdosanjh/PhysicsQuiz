@@ -72,11 +72,11 @@ const questions = [
     },
 
     {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
+        question: "Which of these is not constant ?",
+        optionA: "h",
+        optionB: "g",
+        optionC: "G",
+        optionD: "Boiling Points of Liquids",
         correctOption: "optionD"
     },
 
@@ -137,10 +137,10 @@ const questions = [
 
     {
         question: "Which quantum number gives the information about size of an orbit ?",
-        optionA: "Q.N 3",
-        optionB: "Q.N. 2",
-        optionC: "Q.N. 1",
-        optionD: "Q.No 4",
+        optionA: "Subsidiary Quantum Number",
+        optionB: "Azimuthal Quantum Number",
+        optionC: "Principle Quantum Number",
+        optionD: "Spin Quantum Number",
         correctOption: "optionC"
     },
 
