@@ -1,10 +1,10 @@
 const questions = [
     {
         question: "How many planets our Solar System have?",
-        optionA: "8 days",
-        optionB: "9 days",
-        optionC: "7 days",
-        optionD: "10 days",
+        optionA: "8",
+        optionB: "9",
+        optionC: "7",
+        optionD: "10",
         correctOption: "optionA"
     },
 
