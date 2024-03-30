@@ -90,7 +90,7 @@ const questions = [
     },
 
     {
-        question: "how many dynes of force are equal to One newton of force ?",
+        question: "How many dynes of force are equal to One newton of force ?",
         optionA: "Ten's Power Eight",
         optionB: "Ten's Power Ten",
         optionC: "Ten's Power Five",
@@ -199,7 +199,7 @@ const questions = [
     },
 
     {
-        question: "Name the planer of our solar system that has highest number of satellites?",
+        question: "Name the planet of our solar system that has highest number of satellites?",
         optionA: "Mars",
         optionB: "Saturn",
         optionC: "Jupiter",
@@ -248,8 +248,8 @@ const questions = [
 let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
-    //function to shuffle and push 10 questions to shuffledQuestions array
-    while (shuffledQuestions.length <= 14) {
+    //function to shuffle and push 20 questions to shuffledQuestions array
+    while (shuffledQuestions.length <= 19) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random)
@@ -317,7 +317,7 @@ function checkForAnswer() {
             //set to delay question number till when next question loads
             setTimeout(() => {
                 questionNumber++
-            }, 1000)
+            }, 500)
         }
     })
 }
@@ -330,7 +330,7 @@ function handleNextQuestion() {
     unCheckRadioButtons()
     //delays next question displaying for a second
     setTimeout(() => {
-        if (indexNumber <= 14) {
+        if (indexNumber <= 19) {
             NextQuestion(indexNumber)
         }
         else {
@@ -362,19 +362,19 @@ function handleEndGame() {
     let remarkColor = null
 
     // condition check for player remark and remark color
-    if (playerScore <= 3) {
+    if (playerScore <= 6) {
         remark = "Bad Grades, Keep Practicing."
         remarkColor = "red"
     }
-    else if (playerScore >= 4 && playerScore < 7) {
+    else if (playerScore >= 8 && playerScore < 14) {
         remark = "Average Grades, You can do better."
         remarkColor = "orange"
     }
-    else if (playerScore >= 7) {
+    else if (playerScore >= 14) {
         remark = "Excellent, Keep the good work going."
         remarkColor = "green"
     }
-    const playerGrade = (playerScore / 15) * 100
+    const playerGrade = (playerScore / 20) * 100
 
     //data to display to score board
     document.getElementById('remarks').innerHTML = remark
